@@ -104,8 +104,6 @@ ylim([x_min, x_max]);
 zlabel('Potential $U$');
 zlim([-inf, 1.1*eta]);
 
-% legend([v0, v1, v2], {'Leader', 'Follower 1', 'Follower 2'}, location='NorthEast', fontsize=14);
-
 if name_fig
     sgtitle(sprintf('\\textbf{Straight move: formation of %s with obstacle avoidance}', ...
             model_type), interpreter='latex', fontsize=18);

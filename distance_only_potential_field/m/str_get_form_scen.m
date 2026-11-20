@@ -12,6 +12,11 @@ if scenario == 1
     delta12_1 = [0; -20];
     delta01_2 = [10; 0];
     delta12_2 = [10; 0]; 
+    % offsets change time
+    t_change1 = 5;
+    t_change2 = 15;
+    % velocity increase when formation changes
+    dVel = 8;
 elseif scenario == 2
     % double integrators initial conditions
     x00 =  0*dx; y00 =  0*dy; dx00 = dx; dy00 = 0;    % leader
@@ -22,6 +27,11 @@ elseif scenario == 2
     delta12_1 = [-10; 0];
     delta01_2 = [20; 0];
     delta12_2 = [-10; 0]; 
+    % offsets change time
+    t_change1 = 2;
+    t_change2 = 15;
+    % velocity increase when formation changes
+    dVel = 2.5;
 elseif scenario == 3
     % double integrators initial conditions
     x00 = 0*dx; y00 =  0*dx; dx00 = dx; dy00 = 0;    % leader
@@ -32,14 +42,14 @@ elseif scenario == 3
     delta12_1 = [0; -20];
     delta01_2 = [0; 10];
     delta12_2 = [0; -20]; 
+    % offsets change time
+    t_change1 = 2;
+    t_change2 = 15;
+    % velocity increase when formation changes
+    dVel = 2.5;
 else
     fprintf('ERROR: Wrong scenario chosen!\n');
 end
-% offsets change time
-t_change1 = 2;
-t_change2 = 15;
-
-dVel = 2.5;
 
 [x00, y00] = transformT([x00; y00], ang, x00, y00);
 [x10, y10] = transformT([x10; y10], ang, x00, y00);

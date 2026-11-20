@@ -3,7 +3,7 @@ blue   = '#0072BD';
 orange = '#D95319';
 yellow = '#EDB120';
 
-run('../str_obstacle_grid');
+min_dist = 3;
 
 %% SET LATEX FONT
 set(groot, 'defaultTextInterpreter', 'latex');
@@ -40,7 +40,7 @@ figure;
 ax1 = subplot(1,2,1);
 
 plot(iii_time2, veh1_veh2_coa, linewidth=2, linestyle='-', color=blue);
-yline(obstacles(3,1), linewidth=2, linestyle='-', color='black', label='$R$', labelhorizontalalignment='left', ...
+yline(min_dist, linewidth=2, linestyle='-', color='black', label='$\|\mbox{\boldmath$p$}_{12}\|_2$', labelhorizontalalignment='left', ...
     labelverticalalignment='top', fontsize=14, handlevisibility='off', interpreter='latex');
 
 set(gca, fontsize=14);

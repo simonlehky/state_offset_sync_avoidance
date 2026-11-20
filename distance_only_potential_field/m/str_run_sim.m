@@ -7,25 +7,27 @@ save_mat = true;
 % gradual offset change
 goc = true;
 
-% use collision and obstacle avoidance
-coa = true;
-
 % choose formation scenario
 x00 = 0; y00 = 0;
 ang = 0;
 dx = 10; dy = 0;
 
 % scenario = 1; % move sideways and back
-% scenario = 2; % switch in line
-scenario = 3; % obstacle avoidance
+scenario = 2; % switch in line
+% scenario = 3; % obstacle avoidance
 
 model = 'iii';
 
 %% COLLISION AND OBSTACLE AVOIDANCE
 q = 2;
-if scenario == 2        % collision avoidance
+if scenario == 1
+    coa = false;
+    eta = 0; rho = 0;
+elseif scenario == 2        % collision avoidance
+    coa = true;
     eta = 5000; rho = 0.65;
 elseif scenario == 3    % obstacle avoidance
+    coa = true;
     eta = 2200; rho = 5.4;
 end
 

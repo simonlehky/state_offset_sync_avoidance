@@ -42,7 +42,7 @@ title('Leader -- Follower 1');
 xlabel('Time [s]');
 xlim([-inf, inf]);
 ylabel('Coordinate $x$');
-ylim([-2, 12]);
+ylim([-inf, inf]);
 
 % ------------------------------- OFFSET12 --------------------------------
 subplot(1,2,2);
@@ -65,7 +65,7 @@ pbaspect([1 1 1]);
 title('Follower 1 -- Follower 2');
 xlabel('Time [s]');
 xlim([-inf, inf]);
-ylim([-2, 12]);
+ylim([-inf, inf]);
 
 lgd = legend('Reference', 'Double integrator', location='SouthOutside', fontsize=14, orientation='horizontal');
 lgd.Position = [0.35 0.05 0.3 0.05]; 
@@ -110,7 +110,7 @@ title('Leader -- Follower 1');
 xlabel('Time [s]');
 xlim([-inf, inf]);
 ylabel('Coordinate $y$');
-ylim([-2, 12]);
+ylim([-inf, inf]);
 
 % ------------------------------- OFFSET12 --------------------------------
 subplot(1,2,2);
@@ -133,7 +133,7 @@ pbaspect([1 1 1]);
 title('Follower 1 -- Follower 2');
 xlabel('Time [s]');
 xlim([-inf, inf]);
-ylim([-22, 2]);
+ylim([-inf, inf]);
 
 lgd = legend('Reference', 'Double integrator', location='SouthOutside', fontsize=14, orientation='horizontal');
 lgd.Position = [0.35 0.05 0.3 0.05]; 
@@ -178,7 +178,7 @@ title('Leader -- Follower 1');
 xlabel('Time [s]');
 xlim([-inf, inf]);
 ylabel('Coordinate $x$');
-ylim([-6, 6]);
+ylim([-inf, inf]);
 
 % ------------------------------- OFFSET12 --------------------------------
 subplot(1,2,2);
@@ -201,7 +201,7 @@ pbaspect([1 1 1]);
 title('Follower 1 -- Follower 2');
 xlabel('Time [s]');
 xlim([-inf, inf]);
-ylim([-6, 6]);
+ylim([-inf, inf]);
 
 lgd = legend('Reference', 'Double integrator', location='SouthOutside', fontsize=14, orientation='horizontal');
 lgd.Position = [0.35 0.05 0.3 0.05]; 
@@ -246,7 +246,7 @@ title('Leader -- Follower 1');
 xlabel('Time [s]');
 xlim([-inf, inf]);
 ylabel('Coordinate $y$');
-ylim([-6, 6]);
+ylim([-inf, inf]);
 
 % ------------------------------- OFFSET12 --------------------------------
 subplot(1,2,2);
@@ -269,7 +269,7 @@ pbaspect([1 1 1]);
 title('Follower 1 -- Follower 2');
 xlabel('Time [s]');
 xlim([-inf, inf]);
-ylim([-6, 6]);
+ylim([-inf, inf]);
 
 lgd = legend('Reference', 'Double integrator', location='SouthOutside', fontsize=14, orientation='horizontal');
 lgd.Position = [0.35 0.05 0.3 0.05]; 

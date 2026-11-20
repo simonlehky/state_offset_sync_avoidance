@@ -8,9 +8,9 @@ model = 'iii';
 % gradual offset change
 goc = true;
 % collision and obstacle avoidance
-coa = true;
+coa = false;
 % 1: formation reconfiguration, 2: collision avoidance, 3: obstacle_avoidance
-scenario = 3;
+scenario = 1;
 name_fig = true;
 save_fig = false;
 
@@ -130,20 +130,6 @@ name_fig = true;
 save_fig = false;
 
 run('plot/str_plot_offset_diff');
-
-%% POSITION OFFSETS TRANSIENT WITH COLLISION AND OBSTACLE AVOIDANCE
-% COMPARE VEHICLE MODELS
-
-% gradual offset change
-goc = true;
-% collision and obstacle avoidance
-coa = true;
-% 1: formation reconfiguration, 2: collision avoidance, 3: obstacle_avoidance
-scenario = 3;
-name_fig = true;
-save_fig = false;
-
-run('plot/str_plot_offset_transient');
 
 %% SAFETY DISTANCE CHECK FOR COLLISION AVOIDANCE
 % COMPARE VEHICLE MODELS

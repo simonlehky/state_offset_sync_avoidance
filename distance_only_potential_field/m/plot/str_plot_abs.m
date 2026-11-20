@@ -70,9 +70,6 @@ ylim([-inf, inf]);
 
 legend('Double integrator', location='South', fontsize=14, orientation='horizontal');
 
-% lgd = legend('Double integrator', location='SouthOutside', fontsize=14, orientation='horizontal');
-% lgd.Position = [0.35 0.05 0.3 0.05]; 
-
 if name_fig
     sgtitle('\textbf{Straight move: coordinate $x$}', fontsize=18);
 end
@@ -147,9 +144,6 @@ ylabel('Coordinate $y$ [m]');
 ylim([-inf, inf]);
 
 legend('Double integrator', location='South', fontsize=14, orientation='horizontal');
-
-% lgd = legend('Double integrator', location='SouthOutside', fontsize=14, orientation='horizontal');
-% lgd.Position = [0.35 0.05 0.3 0.05]; 
 
 if name_fig
     sgtitle('\textbf{Straight move: coordinate $y$}', fontsize=18);
@@ -226,9 +220,6 @@ ylim([-inf, inf]);
 
 legend('Double integrator', location='South', fontsize=14, orientation='horizontal');
 
-% lgd = legend('Double integrator', location='SouthOutside', fontsize=14, orientation='horizontal');
-% lgd.Position = [0.35 0.05 0.3 0.05]; 
-
 if name_fig
     sgtitle('\textbf{Straight move: velocity $\dot{x}$}', fontsize=18);
 end
@@ -303,9 +294,6 @@ ylabel('Velocity $\dot{y}$ [m/s]');
 ylim([-inf, inf]);
 
 legend('Double integrator', location='South', fontsize=14, orientation='horizontal');
-
-% lgd = legend('Double integrator', location='SouthOutside', fontsize=14, orientation='horizontal');
-% lgd.Position = [0.35 0.05 0.3 0.05]; 
 
 if name_fig
     sgtitle('\textbf{Straight move: velocity $\dot{y}$}', fontsize=18);

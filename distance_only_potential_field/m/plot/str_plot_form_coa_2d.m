@@ -43,7 +43,7 @@ xlim([-10, 10]);
 ylabel('Coordinate $x$ [m]');
 ylim([-inf, veh0(end,1)+5]);
 
-legend('Leader', 'Follower 1', 'Follower 2', location='SouthEast', fontsize=14);
+legend('Leader', 'Follower 1', 'Follower 2', location='NorthEast', fontsize=14);
 
 %% PLOT FORMATION POSITION DETAIL
 subplot(1,2,2);
@@ -65,10 +65,10 @@ pbaspect([1 1 1]);
 
 title('Position detail');
 xlabel('Coordinate $y$ [m]');
-xlim([-4, 9]);
-ylim([80, 200]);
+xlim([-2, 6]);
+ylim([80, 180]);
 
-legend('Leader', 'Follower 1', 'Follower 2', location='SouthEast', fontsize=14);
+legend('Leader', 'Follower 1', 'Follower 2', location='NorthEast', fontsize=14);
 
 if name_fig
     if ~coa
@@ -84,11 +84,11 @@ if save_fig
     h = gcf;
     set(h, paperpositionmode='auto');         
     set(h, paperorientation='landscape');
-    output_folder = '../../graphs/straight_mode/';
+    output_folder = '../../graphs/';
     if ~coa
-        filename = strcat(output_folder, sprintf('form%s_str_form_%s_detail.pdf', string(scenario), model));
+        filename = strcat(output_folder, sprintf('form%s_str_form_%s_2d.pdf', string(scenario), model));
     else
-        filename = strcat(output_folder, sprintf('form%s_str_form_%s_coa_detail.pdf', string(scenario), model));
+        filename = strcat(output_folder, sprintf('form%s_str_form_%s_coa_2d.pdf', string(scenario), model));
     end
     print(gcf, '-dpdf', filename);
     fprintf('INFO: Figure saved.\n');
