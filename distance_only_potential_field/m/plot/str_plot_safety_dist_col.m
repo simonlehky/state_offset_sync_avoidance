@@ -73,7 +73,7 @@ if save_fig
     h = gcf;
     set(h, paperpositionmode='auto');         
     set(h, paperorientation='landscape');
-    output_folder = '../../graphs/';
+    output_folder = '../../fig/';
     filename = strcat(output_folder, sprintf('form%s_str_safety_dist_col_f1_f2.pdf', string(scenario)));
     print(gcf, '-dpdf', filename);
     fprintf('INFO: Figure saved.\n');

@@ -12,9 +12,9 @@ x00 = 0; y00 = 0;
 ang = 0;
 dx = 10; dy = 0;
 
-% scenario = 1; % move sideways and back
-scenario = 2; % switch in line
-% scenario = 3; % obstacle avoidance
+% scenario = 1;     % move sideways and back
+scenario = 2;       % switch in line with collision avoidance
+% scenario = 3;     % obstacle avoidance
 
 model = 'iii';
 
@@ -23,10 +23,10 @@ q = 2;
 if scenario == 1
     coa = false;
     eta = 0; rho = 0;
-elseif scenario == 2        % collision avoidance
+elseif scenario == 2
     coa = true;
     eta = 5000; rho = 0.65;
-elseif scenario == 3    % obstacle avoidance
+elseif scenario == 3
     coa = true;
     eta = 2200; rho = 5.4;
 end

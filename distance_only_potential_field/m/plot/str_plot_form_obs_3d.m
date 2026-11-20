@@ -114,7 +114,7 @@ if save_fig
     h = gcf;
     set(h, renderer='opengl');      
     set(h, paperorientation='landscape');
-    output_folder = '../../graphs/';
+    output_folder = '../../fig/';
     if ~coa
         filename = strcat(output_folder, sprintf('form%s_str_form_%s.pdf', string(scenario), model));
     else

@@ -81,7 +81,7 @@ if save_fig
     h = gcf;
     set(h, paperpositionmode='auto');         
     set(h, paperorientation='landscape');
-    output_folder = '../../graphs/';
+    output_folder = '../../fig/';
     filename = strcat(output_folder, sprintf('form%s_str_offset_diff_x_%s.pdf', string(scenario), string(model)));
     print(gcf, '-dpdf', filename);
     fprintf('INFO: Figure saved.\n');
@@ -143,7 +143,7 @@ if save_fig
     h = gcf;
     set(h, paperpositionmode='auto');         
     set(h, paperorientation='landscape');
-    output_folder = '../../graphs/';
+    output_folder = '../../fig/';
     filename = strcat(output_folder, sprintf('form%s_str_offset_diff_y_%s.pdf', string(scenario), string(model)));
     print(gcf, '-dpdf', filename);
     fprintf('INFO: Figure saved.\n');

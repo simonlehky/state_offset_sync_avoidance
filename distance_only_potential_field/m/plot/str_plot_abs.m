@@ -79,7 +79,7 @@ if save_fig
     h = gcf;
     set(h, paperpositionmode='auto');         
     set(h, paperorientation='landscape');
-    output_folder = '../../graphs/';
+    output_folder = '../../fig/';
     filename = strcat(output_folder, sprintf('form%s_str_x.pdf', string(scenario)));
     print(gcf, '-dpdf', filename);
     fprintf('INFO: Figure saved.\n');
@@ -154,7 +154,7 @@ if save_fig
     h = gcf;
     set(h, paperpositionmode='auto');         
     set(h, paperorientation='landscape');
-    output_folder = '../../graphs/';
+    output_folder = '../../fig/';
     filename = strcat(output_folder, sprintf('form%s_str_y.pdf', string(scenario)));
     print(gcf, '-dpdf', filename);
     fprintf('INFO: Figure saved.\n');
@@ -229,7 +229,7 @@ if save_fig
     h = gcf;
     set(h, paperpositionmode='auto');         
     set(h, paperorientation='landscape');
-    output_folder = '../../graphs/';
+    output_folder = '../../fig/';
     filename = strcat(output_folder, sprintf('form%s_str_dx.pdf', string(scenario)));
     print(gcf, '-dpdf', filename);
     fprintf('INFO: Figure saved.\n');
@@ -304,7 +304,7 @@ if save_fig
     h = gcf;
     set(h, paperpositionmode='auto');         
     set(h, paperorientation='landscape');
-    output_folder = '../../graphs/';
+    output_folder = '../../fig/';
     filename = strcat(output_folder, sprintf('form%s_str_dy.pdf', string(scenario)));
     print(gcf, '-dpdf', filename);
     fprintf('INFO: Figure saved.\n');
